@@ -3,6 +3,8 @@
   "version": 2,
   "projects": {
     "auth": "apps/auth",
-    "auth-e2e": "apps/auth-e2e"
+    "auth-e2e": "apps/auth-e2e",
+    "home": "apps/home",
+    "home-e2e": "apps/home-e2e"
   }
 }

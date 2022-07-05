@@ -1,0 +1,11 @@
+<ng-container *ngIf="tabsList?.length; else noTabsTemplate">
+    <div class="tab">
+        <button *ngFor="let tab of tabsList" class="tablinks" [routerLink]="tab?.routerLink">{{tab?.name}}</button>
+    </div>
+</ng-container>
+
+<ng-template #noTabsTemplate>
+    <div style="display: flex; justify-content: center;">
+        <h2>Não há abas registradas</h2>
+    </div>
+</ng-template>

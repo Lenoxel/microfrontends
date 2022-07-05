@@ -1,17 +1,17 @@
 {
   "$schema": "..\\..\\node_modules\\nx\\schemas\\project-schema.json",
-  "sourceRoot": "apps/auth-e2e/src",
+  "sourceRoot": "apps/home-e2e/src",
   "projectType": "application",
   "targets": {
     "e2e": {
       "executor": "@nrwl/cypress:cypress",
       "options": {
-        "cypressConfig": "apps/auth-e2e/cypress.json",
-        "devServerTarget": "auth:serve:development"
+        "cypressConfig": "apps/home-e2e/cypress.json",
+        "devServerTarget": "home:serve:development"
       },
       "configurations": {
         "production": {
-          "devServerTarget": "auth:serve:production"
+          "devServerTarget": "home:serve:production"
         }
       }
     },
@@ -22,13 +22,13 @@
       ],
       "options": {
         "lintFilePatterns": [
-          "apps/auth-e2e/**/*.{js,ts}"
+          "apps/home-e2e/**/*.{js,ts}"
         ]
       }
     }
   },
   "tags": [],
   "implicitDependencies": [
-    "auth"
+    "home"
   ]
 }
